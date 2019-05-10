@@ -1,0 +1,90 @@
+.card-polaroid {
+    position: relative;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(240,240,240);
+    margin: 2em auto;
+    transition: transform .5s, box-shadow .5s, background-color .5s;
+}
+
+.card-polaroid img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-polaroid h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0;
+}
+
+.card-polaroid p {
+  font-family: 'Indie Flower', cursive;
+  text-align: justify;
+  margin: 0;
+}
+
+.rotate-1 {
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.rotate-2 {
+  transform: rotate(2deg);
+  z-index: 2;
+}
+
+.rotate-3 {
+  transform: rotate(6deg);
+  z-index: 3;
+}
+
+.card-polaroid:hover {
+  background-color: white;
+  transform: rotate(0deg) scale(1.1);
+  z-index: 10;
+  box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
+}
+
+/*.card-polaroid:active {
+  transform: rotate(0deg) scale(1.1) scaleX(-1);
+  transition: 0.1s;
+}
+
+.card-polaroid:active img, .card-polaroid:active h3, .card-polaroid:active p {
+  visibility: hidden;
+}
+
+.card-polaroid .paw {
+  visibility: hidden;
+}
+
+.card-polaroid:active .paw {
+  visibility: visible;
+}*/
+
+#footer .card-polaroid {
+  margin: -5em auto;
+  transform: scale(0.5) rotate(-6deg);
+}
+
+#footer .card-polaroid:hover {
+  transform: scale(0.5) rotate(-6deg);
+}
+
+#footer .card-polaroid p {
+  text-align: center;
+  font-size: 26px;
+}
+
+@media screen and (min-width: 1101px) {
+  .rotate-2 {
+    top: -50px;
+  }
+  .card-polaroid {
+    margin: 2em 0;
+  }
+}

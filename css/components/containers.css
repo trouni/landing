@@ -1,0 +1,53 @@
+.container {
+  width: 80%;
+  max-width: 900px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.container > h1, .container > h2, .container > h3 {
+  display: inline-block;
+}
+
+.container > h2 {
+  color: white;
+  font-weight: 300;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.cards {
+  /*display: flex;
+  justify-content: space-between;*/
+}
+
+#how-it-works h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+}
+
+#how-it-works {
+  min-height: 70vh;
+  padding: 5em 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#how-it-works .container {
+  width: 90%;
+  max-width: unset;
+  text-align: center;
+}
+
+@media screen and (min-width: 1101px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+}
