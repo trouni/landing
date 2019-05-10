@@ -67,6 +67,9 @@
 }*/
 
 #footer .card-polaroid {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   margin: -5em auto;
   transform: scale(0.5) rotate(-6deg);
 }
